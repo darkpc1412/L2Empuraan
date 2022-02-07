@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="L2EMPURAAN.jpg" alt="Devil V2 Logo">
+  <img src="L2EMPURAAN.jpg" alt="𝙻2_𝙴𝙼𝙿𝚄𝚁𝙰𝙰𝙽 𝙸𝙼𝙳𝙱 𝙱𝙾𝚃">
 </p>
 <h1 align="center">
-  <b>𝚂𝙰𝙼𝙰𝙽𝚃𝙷𝙰 𝙸𝙼𝙳𝙱 𝙱𝙾𝚃</b>
+  <b>𝙻2_𝙴𝙼𝙿𝚄𝚁𝙰𝙰𝙽 𝙸𝙼𝙳𝙱 𝙱𝙾𝚃</b>
 </h1>
 
 [![Stars](https://img.shields.io/github/stars/Samantha-a/Film-Club?style=flat-square&color=green)](https://github.com/Samantha-a/Film-Club/stargazers)
