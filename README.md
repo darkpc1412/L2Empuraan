@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="samantha_7.jpg" alt="Devil V2 Logo">
+  <img src="L2EMPURAAN.jpg" alt="Devil V2 Logo">
 </p>
 <h1 align="center">
   <b>𝚂𝙰𝙼𝙰𝙽𝚃𝙷𝙰 𝙸𝙼𝙳𝙱 𝙱𝙾𝚃</b>
