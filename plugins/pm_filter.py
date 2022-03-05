@@ -743,7 +743,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('⚚ ✶ 𝙱𝙰𝙲𝙺 ✶ ⚚', callback_data='start'),         
             InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data='next')
-            ],     
+        ]]     
     elif query.data == "next":
         buttons = [[
             InlineKeyboardButton('𝙿𝙸𝙽', callback_data='pin'), 
