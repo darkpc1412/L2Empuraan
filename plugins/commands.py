@@ -54,7 +54,7 @@ async def start(client, message):
             InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 ', url='https://t.me/+AMHw_K1wvOM3MTU9')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)               
-        await replay_sticker.message.delete(      
+        await message.reply_sticker(      
             sticker="CAACAgUAAxkBAAL9v2IjkFHMYY1RRDByYdV6CtrJ7pRrAAIDAwACOmaJV8FSdrWb7gp0HgQ",
         )          
         reply_markup = InlineKeyboardMarkup(buttons)
