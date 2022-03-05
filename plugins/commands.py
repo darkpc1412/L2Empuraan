@@ -61,8 +61,9 @@ async def start(client, message):
             parse_mode='html'
         )
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_sticker(
-            sticker="CAACAgIAAxkBAALyWmIiWZt-QiBdwgmuowPfi4MxnvU-AALoEgACTxoYS4DG48OjExNeHgQ",
+        k = await client.send_sticker(
+        chat_id=message.chat.id,        
+        sticker="CAACAgIAAxkBAALyWmIiWZt-QiBdwgmuowPfi4MxnvU-AALoEgACTxoYS4DG48OjExNeHgQ",
         )
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
