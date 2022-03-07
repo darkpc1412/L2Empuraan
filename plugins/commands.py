@@ -57,7 +57,8 @@ async def start(client, message):
         await message.reply_sticker(
         await Client.message.delete,   
             sticker="CAACAgUAAxkBAAL9v2IjkFHMYY1RRDByYdV6CtrJ7pRrAAIDAwACOmaJV8FSdrWb7gp0HgQ",        
-        ))          
+        )
+        )          
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
             video=random.choice(PICS),
