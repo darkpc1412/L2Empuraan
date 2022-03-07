@@ -56,7 +56,7 @@ async def start(client, message):
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_sticker(   
             sticker="CAACAgUAAxkBAAL9v2IjkFHMYY1RRDByYdV6CtrJ7pRrAAIDAwACOmaJV8FSdrWb7gp0HgQ",
-        await Client.message.delete()
+        await Client.message.delete(
         )          
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
