@@ -53,7 +53,7 @@ async def start(client, message):
             InlineKeyboardButton(' 𝙾𝚠𝚗𝚎𝚛 ', url='https://t.me/albintko'),
             InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 ', url='https://t.me/+AMHw_K1wvOM3MTU9')
         ]]
-        await silent.message.delete()
+        await cilent.message.delete()
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_sticker(
             sticker="CAACAgUAAxkBAAL9v2IjkFHMYY1RRDByYdV6CtrJ7pRrAAIDAwACOmaJV8FSdrWb7gp0HgQ",
