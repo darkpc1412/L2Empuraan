@@ -3,7 +3,7 @@ import logging
 import random
 import asyncio
 from Script import script
-from pyrogram import Client, filters 
+from pyrogram import Client, filters
 from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from database.ia_filterdb import Media, get_file_details, unpack_new_file_id
@@ -22,6 +22,12 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
+            [
+                InlineKeyboardButton('💠 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 💠', url='https://t.me/+AMHw_K1wvOM3MTU9')
+            ],
+            [
+                InlineKeyboardButton('💠 𝙾𝚠𝚗𝚎𝚛 💠', url='https://t.me/albintko')
+            ],
             [
                 InlineKeyboardButton('💠 𝙶𝚛𝚘𝚞𝚙 💠', url='https://t.me/moviebus2')
             ],
@@ -54,21 +60,20 @@ async def start(client, message):
             InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 ', url='https://t.me/+AMHw_K1wvOM3MTU9')
         ]]
         await message.reply_chat_action("typing")
-        m=await message.reply_sticker("CAACAgUAAxkBAAEOha9iJh88DjhbAAHMnlBkOb5DsjaPcNwAAgMDAAI6ZolXwVJ2tZvuCnQjBA") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAEBB2liJjsNVSkfAy_OtYR0Q48dN_9DsAACGgIAAv68YVTI6jnmvnlZlh4E") 
         await asyncio.sleep(1)
         await m.delete()
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_sticker(
-        await message.msg.delete,   
-            sticker="CAACAgUAAxkBAAL9v2IjkFHMYY1RRDByYdV6CtrJ7pRrAAIDAwACOmaJV8FSdrWb7gp0HgQ",        
-        )         
+        await message.reply_chat_action("typing")
+        m=await message.reply_sticker("CAACAgUAAxkBAAEBB35iJjxD1GtQSZLiEpZ6jy6De4ilEQACxQQAAlwPSFVIEFIJTgeDTB4E") 
+        await asyncio.sleep(1)
+        await m.delete()          
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
             video=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
-        )      
+        )
         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
         try:
@@ -79,7 +84,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🔥 JOIИ CHΛИИΞL 🔥", url=invite_link.invite_l
+                    "👻 JOIИ CHΛИИΞL 👻", url=invite_link.invite_link
                 )
             ]
         ]
@@ -107,9 +112,13 @@ async def start(client, message):
             InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 ', url='https://t.me/+AMHw_K1wvOM3MTU9')
         ]]
         await message.reply_chat_action("typing")
-        m=await message.reply_sticker("CAACAgUAAxkBAAEOha9iJh88DjhbAAHMnlBkOb5DsjaPcNwAAgMDAAI6ZolXwVJ2tZvuCnQjBA") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAEBB2liJjsNVSkfAy_OtYR0Q48dN_9DsAACGgIAAv68YVTI6jnmvnlZlh4E") 
         await asyncio.sleep(1)
         await m.delete()
+        await message.reply_chat_action("typing")
+        m=await message.reply_sticker("CAACAgUAAxkBAAEBB35iJjxD1GtQSZLiEpZ6jy6De4ilEQACxQQAAlwPSFVIEFIJTgeDTB4E") 
+        await asyncio.sleep(1)
+        await m.delete()        
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
             video=random.choice(PICS),
