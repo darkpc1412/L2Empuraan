@@ -696,8 +696,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 ', url='https://t.me/+AMHw_K1wvOM3MTU9')
         ]]
         await message.reply_chat_action("typing")
-        m=await message.reply_sticker("CAACAgUAAxkBAAEOha9iJh88DjhbAAHMnlBkOb5DsjaPcNwAAgMDAAI6ZolXwVJ2tZvuCnQjBA") 
-        await asyncio.sleep(1) await m.delete()
+
+ m=await message.reply_sticker("CAACAgUAAxkBAAPLYhmLeQjtiqPZJEHOFh4KFOjbWzcAAvgDAAKfRIlXnd2oxpsLJeYeBA") 
+
+await asyncio.sleep(1) await m.delete()
+        
+     
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
