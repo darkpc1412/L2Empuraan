@@ -694,26 +694,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton(' 𝙾𝚠𝚗𝚎𝚛 ', url='https://t.me/albintko'),
             InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 ', url='https://t.me/+AMHw_K1wvOM3MTU9')
-        ]]
-        await message.reply_chat_action("typing")
-
-        m=await message.reply_sticker("CAACAgUAAxkBAAEOha9iJh88DjhbAAHMnlBkOb5DsjaPcNwAAgMDAAI6ZolXwVJ2tZvuCnQjBA") 
-
-        await asyncio.sleep(1)
-        await m.delete()
-        await query.message.edit_text(
-          
-
-           text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
-
-            reply_markup=reply_markup,
-            parse_mode='html'
-            
- 
-
-
-        
-     
+        ]]        
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -847,7 +828,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons= [[
             InlineKeyboardButton(' 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/+AMHw_K1wvOM3MTU9'),
-            InlineKeyboardButton(' 𝚂𝚘𝚞𝚛𝚌𝚎',  url='https://t.me/+AMHw_K1wvOM3MTU9')
+            InlineKeyboardButton(' 𝚂𝚘𝚞𝚛𝚌𝚎', callback_data='source')
             ],[
             InlineKeyboardButton(' 𝙷𝚘𝚖𝚎', callback_data='start'),
             InlineKeyboardButton(' 𝙲𝚕𝚘𝚜𝚎', callback_data='close_data')
