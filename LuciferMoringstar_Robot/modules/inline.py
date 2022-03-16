@@ -4,6 +4,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InlineQue
 from LuciferMoringstar_Robot.database._utils import get_size
 from LuciferMoringstar_Robot.database.autofilter_db import get_search_results, is_subscribed
 from config import CACHE_TIME, AUTH_USERS, FORCES_SUB, CUSTOM_FILE_CAPTION
+from pyrogram import Client, filters
 logger = logging.getLogger(__name__)
 cache_time = 0 if AUTH_USERS or FORCES_SUB else CACHE_TIME
 
