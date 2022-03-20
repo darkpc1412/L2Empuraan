@@ -1,6 +1,5 @@
-import re
-import base64
 import logging
+import json
 from struct import pack
 from pyrogram.errors import UserNotParticipant
 from pyrogram.file_id import FileId
@@ -8,9 +7,20 @@ from pymongo.errors import DuplicateKeyError
 from umongo import Instance, Document, fields
 from motor.motor_asyncio import AsyncIOMotorClient
 from marshmallow.exceptions import ValidationError
+from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid
+from info import AUTH_CHANNEL, LONG_IMDB_DESCRIPTION, MAX_LIST_ELM
+from imdb import IMDb
+import asyncio
+from pyrogram.types import Message
+from typing import Union
+import re
 import os
+from datetime import datetime
+from typing import List
+from pyrogram.types import InlineKeyboardButton
+from database.users_chats_db import db
+from bs4 import BeautifulSoup
 import requests
-import json
 from info import DATABASE_URI, DATABASE_NAME, COLLECTION_NAME, USE_CAPTION_FILTER, AUTH_CHANNEL, API_KEY
 DATABASE_URI_2=os.environ.get('DATABASE_URI_2', DATABASE_URI)
 DATABASE_NAME_2=os.environ.get('DATABASE_NAME_2', DATABASE_NAME)
