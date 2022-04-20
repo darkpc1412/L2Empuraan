@@ -93,6 +93,6 @@ python3 bot.py
 • /broadcast - to broadcast a message to all Eva Maria users
 ```
 
-𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 ›› [𝐀𝐋𝐁𝐈𝐍](https://t.me/albintko)                                                                                                                                        
-𝙶𝚁𝙾𝚄𝙿 ›› [𝗙𝗶𝗹𝗶𝗺 𝗖𝗹𝘂𝗯](https://t.me/moviebus2)                                             
-𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ›› [𝐅𝐂 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 | Super Sharanya](https://t.me/+AMHw_K1wvOM3MTU9)
+𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 ›› [JUSTIN](https://t.me/Justinvrgs)                                                                                                                                        
+𝙶𝚁𝙾𝚄𝙿 ›› [𝐌𝐎𝐕𝐈𝐄 𝐂𝐋𝐔𝐁 📺🎥](https://t.me/mnxmovies124)                                             
+𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ›› [𝐂𝐋𝐔𝐁 𝐇𝐎𝐔𝐒𝐄 🎬](https://t.me/movieclub1241)
