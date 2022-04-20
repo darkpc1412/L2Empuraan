@@ -748,7 +748,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="𝓛𝓸𝓪𝓭𝓲𝓷𝓰"
         )
         await query.message.edit_text(
-            text="🆂🅰🅼🅰🅽🆃🅷🅰"
+            text="ᴅᴀʀᴋ"
         )
         await query.message.edit_text(        
             text="Select your required mode from below!",
@@ -818,7 +818,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="𝓛𝓸𝓪𝓭𝓲𝓷𝓰"
         )
         await query.message.edit_text(
-            text="🆂🅰🅼🅰🅽🆃🅷🅰"
+            text="ᴅᴀʀᴋ"
         )
         await query.message.edit_text(          
             text=script.HELP_TXT.format(query.from_user.mention),
@@ -856,7 +856,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="𝓛𝓸𝓪𝓭𝓲𝓷𝓰"
         )
         await query.message.edit_text(
-            text="🆂🅰🅼🅰🅽🆃🅷🅰"
+            text="ᴅᴀʀᴋ"
         )
         await query.message.edit_text(          
             text=script.HELP_TXT.format(query.from_user.mention),
